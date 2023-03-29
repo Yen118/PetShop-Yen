@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+
+    <!--STAR HEADER-->
+    <header>
+        <div class="web-start">
+            <ul class="web-start-list">
+                <li class="web-start-item">
+                     <a href="" class="web-start-item-link saparate">Enable accessibility</a>
+                </li>
+                <li class="web-start-item">
+                     <a href="" class="web-start-item-link saparate">Gift card</a>
+                </li>
+                 <li class="web-start-item">
+                     <a href="" class="web-start-item-link saparate">Flyer</a>
+                 </li>
+                 <li class="web-start-item">
+                     <a href="" class="web-start-item-link">Track your order</a>
+                 </li>             
+            </ul>
+            <ul class="web-start-list-right">
+                 <li class="web-start-item-right">Sign up, earn points, get treats</li>
+            </ul>
+        </div>
+
+        <div class="navbody">
+            <a href="#" class="logo"><img src="img/petsmart-logo.png" alt="#"></a>
+     
+            
+            <div class="header-search">
+                <input type="text" class="header-search-input" placeholder="Search">
+                <div class="header-search-subSearch">
+                    <div class="subSearch">
+                        <div class="subSearch-first">
+                            <ul class="subSearch-first-catogry1">
+                                <li class="firstPart">Trending Categories</li>
+                                <li><a href="">Dog Food</a></li>
+                                <li><a href="">Litter</a></li>
+                                <li><a href="">Treats</a></li>
+                                <li><a href="">Science Food</a></li>
+                                <li><a href="">Aquariums</a></li>
+                            </ul>
+    
+                            <ul class="subSearch-first-catogry2">
+                                <li class="firstPart">Trending Brands</li>
+                                <li><a href="">Blue Buffalo</a></li>
+                                <li><a href="">Purina Pro Plan</a></li>
+                                <li><a href="">Hill's Science Diet</a></li>
+                                <li><a href="">Simply Nourish</a></li>
+                                <li><a href="">Royal Canin</a></li>
+                            </ul>
+                        </div>
+                        <div class="subSearch-second">
+                            <p>Related Products</p>
+                            <div class="grid__column-2">
+                                <div class="product-section">
+                                    <div class="product-section-1">
+                                        <section>
+                                            <img src="img/relatedProduct1.jpg" alt="">
+                                            <p>Great Choice Wire Dog crate</p>
+                                            <p>$22.99 - 72.99</p>
+                                        </section>
+                
+                                        <section>
+                                            <img src="img/relatedProduct2.jpg" alt="">
+                                            <p>Greenies Regular Dental Dog Treats</p>
+                                            <p>$5.99 - 69.99</p>     
+                                        </section>
+                                        <section>
+                                            <img src="img/relatedProduct5.jpg" alt="">
+                                            <p>Purina Pro Plann Savour Shredded Blend Aldult Dog Food- Chicken and Rice</p>
+                                            <p>$13.99 - 61.99</p>
+                                        </section>
+                                    </div>
+                                    
+                                    <div class="product-section-2">
+                                        <section>
+                                            <img src="img/relatedProduc3.jpg" alt="">
+                                            <p>ThunderShirt Insanely Calm Anxiety Shirt</p>
+                                            <p>$39.99 - 44.99</p>
+                                        </section>
+                
+                                        <section>
+                                            <img src="img/relatedProduct4.jpg" alt="">
+                                            <p>Top Paw XLarge Dog Pads</p>
+                                            <p>$7.79 - 47.99</p>
+                                        </section>
+                                    </div>      
+                                </div>                           
+                            </div>
+                        </div>
+                    </div>                     
+                </div>             
+            </div>
+                           
+            <div class="signIn-form signForm-has-amination">    
+                <img src="img/loyalty-icon.png" class="signIn-pic" alt="">
+                <div class="signIn-form-font">
+                    <a href="#">Sign In <i class="fas fa-angle-down"></i>
+                    <i class="fas fa-angle-up"></i></a>
+                    <p>Treats & Account</p>
+                </div> 
+                <div class="subSignForm">
+                    <div class="subSignForm-signUp">
+                        <h2>Treats</h2>
+                        <p>Join our loyalty program & earn points every time you shop</p>
+                        <p class="signup">sign up</p>
+                    </div>
+                    <div class="logIn-form">
+                        <button onclick="document.getElementById('id01').style.display='block'" class="button-onclick">Login</button>
+                        <div id="id01" class="modal">
+                            <div class="modal-overlay"></div>
+                            <div class="modal-body">
+                                <div class="modal-inner">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <!--Authen Form-->
+                                    <div class="auth-form">
+                                        <div class="auth-form-header">
+                                            <h3 class="auth-form-heading">account log in</h3>
+                                        </div>
+                                        <div class="auth-form-form">
+                                            <div class="auth-form-group" id="form-1">
+                                                <input id="email" name="email" type="text" class="auth-form-input" placeholder="email address">
+                                                <span class="form-message"></span>
+                                            </div>
+                                            <div class="auth-form-group" id="form-1">
+                                                <input id="password" name="password" type="password" class="auth-form-input" placeholder="current password">
+                                                <span class="form-message"></span>
+                                            </div>
+                                            <div class="ckeckbox-form">
+                                                <input type="checkbox" class="checkbox-input" name="singin" value="remember me">remember me 
+                                                <p>forgot password?</p>
+                                            </div>
+                                            <div class="login-button">
+                                                <p class="loginButton">log in</p>
+                                                <div class="logInContent">
+                                                    <p class="content-frist">We are no longer supporting social sign in</p>
+                                                    <p class="content-second">please click <span>forgot password</span> to access your account</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="auth-form-footer">
+                                            <h3 class="auth-form-footer">account sign up</h3>
+                                            <p class="authForm-content">New customer? Create a Treat about now to start earning points on future purchases.</p>
+                                            <p class="signup-button">create an account</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>         
+                    </div>
+                </div>                 
+            </div>
+                
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <a href="#" class="user-icon fas fa-user"></a>
+                <a href="#" class="user-marker fas fa-map-marker-alt"></a>
+                <a href="#" class="fas fa-shopping-cart">
+                    <div class="cartForm">
+                        <p>Time to start shopping!</p>
+                    </div>
+                </a>
+            </div>      
+        </div>
+        
+    </header>
+
+     <!--END HEADER-->
+
+
+    <!--STAR LIST-->
+    <div class="list-navbar">
+        <div class="list-content">
+            <div class="list-content-brand">
+                <a href="">Shop by Brand</a>
+                <div class="content-by-brand">
+                    <div class="section-one">
+                        <img src="img/imgByBrand/Beaver Canoe-Logo_112X112-CA.jpg" alt="">
+                        <img src="img/imgByBrand/CAN_WEB_Brand_FlyOut_FeatBrand_Blue_Logo.jpg" alt="">
+                        <img src="img/imgByBrand/CAN_WEB_Brand_FlyOut_FeatBrand_Hills_Logo.jpg" alt="">
+                        <img src="img/imgByBrand/CAN_WEB_Brand_FlyOut_FeatBrand_Nutrience_Logo.jpg" alt="">
+                        <img src="img/imgByBrand/CAN_WEB_Brand_FlyOut_FeatBrand_ProPlan_Logo.jpg" alt="">
+                        <img src="img/imgByBrand/CAN_WEB_Brand_FlyOut_FeatBrand_RoyalCanin_Logo.png" alt="">
+                    </div>
+                    <div class="section-two">
+                        <img src="img/imgByBrand/CAN_WEB_Brand_FlyOut_FeatBrand_thrive_Logo.jpg" alt="">
+                        <img src="img/imgByBrand/CAN_WEB_Brand_Greenies_Flyout_Logo.png" alt="">
+                        <img src="img/imgByBrand/CAN_WEB_Brand_Instinct_Flyout_Logo.jpg" alt="">
+                        <img src="img/imgByBrand/CAN_WEB_Brand_Merrick_Flyout_Logo.png"alt="">
+                        <img src="img/imgByBrand/CAN_WEB_Brand_Nutro_Flyout_Logo.jpg" alt="">
+                        <img src="img/imgByBrand/CAN_WEB_Brand_Wellness_Flyout_Logo.png" alt="">
+                    </div>
+                    <div class="section-three">
+                        <img src="img/imgByBrand/CAN_WEB_SN_FeatBrand_Logo.png" alt="">
+                        <img src="img/imgByBrand/WEB-20-639559-JUL-20_Shop_by_Brand_Natural_Balance.jpg" alt="">
+                        <img src="img/imgByBrand/WEB-497879-12-19_All-Living-Things_Brand-Flyout.jpg" alt="">
+                        <img src="img/imgByBrand/WEB-497879-12-19_Authority_Brand-Flyout.jpg" alt="">
+                        <img src="img/imgByBrand/WEB-497879-12-19_Top-Fin_Brand-Flyout.jpg" alt="">
+                        <img src="img/imgByBrand/WEB-497879-12-19_Whisker-City_Brand-Flyout.jpg" alt="">
+                    </div>
+                    <div class="section-content">
+                        <p>shop all brands</p>
+                    </div>
+                </div>
+            </div>  
+            <div class="list-content-pet">
+                <a href="">Shop by Pet</a>
+                <div class="ListContentPet-content">
+                    <div class="listContentLinks">
+                        <div class="listContentPet-Doglist">
+                            <p class="listContentPet-list-topic">Dog</p>
+                            <div class="listContentPet-list-topic-product">
+                                <div class="listContentPet-list-topic-product-links">
+                                    <div class="listContentPet-list-topic-product-links-DogFood">
+                                        <h4>Food</h4>
+                                        <ul>
+                                            <li>Canned Food</li>
+                                            <li>Dry Food</li>
+                                            <li>Food Toppers</li>
+                                            <li>Shop All</li>
+                                        </ul>
+                                    </div>
+                                    <div class="listContentPet-list-topic-product-links-DogFood">
+                                        <h4>Treats</h4>
+                                        <ul>
+                                            <li>Biscuits & Bakery</li>
+                                            <li>Bones & Rawhide</li>
+                                            <li>Chewy Treats</li>
+                                            <li>Dental Traets</li>
+                                            <li>Jerky</li>
+                                            <li>Training Traets</li>
+                                        </ul>
+                                    </div>
+                                    <div class="listContentPet-list-topic-product-links-DogFood">
+                                        <h4>Supplies</h4>
+                                        <div class="supplies-Ul">
+                                            <ul class="supplies">
+                                                <li>Beds & Furniture</li>
+                                                <li>Bowis & Feeders</li>
+                                                <li>Cleaning Supplies</li>
+                                                <li>Clothing & Shoes</li>
+                                                <li>Collars, Hamesses & Leashes</li>
+                                                <li>Creates, Gates & Containment</li>
+                                            </ul>
+                                            <ul>
+                                                <li>Dental Care & Wellness</li>
+                                                <li>Flea & Tick</li>
+                                                <li>Grooming Supplies</li>
+                                                <li>Toys</li>
+                                                <li>Training & Behaviour</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listContentPet-Catlist">
+                            <p class="listContentPet-list-topic">Cat</p>
+                            <div class="listContentPet-list-topic-Catproduct">
+                                <div class="listContentPet-list-topic-product-links">
+                                    <div class="listContentPet-list-topic-product-links-DogFood">
+                                        <h4>Food & Treats</h4>
+                                        <ul>
+                                            <li>Wet Food</li>
+                                            <li>Traets</li>
+                                            <li>Dry Food</li>
+                                            <li>Catnip & Grass</li>
+                                            <li>Shop All</li>
+                                        </ul>
+                                    </div>
+                                    <div class="listContentPet-list-topic-product-links-DogFood">
+                                        <h4>Litter</h4>
+                                        <ul>
+                                            <li>Deodorizers & Filters</li>
+                                            <li>Litter</li>
+                                            <li>Litter Boxes</li>
+                                            <li>Mats & Liners</li>
+                                            <li>Waste Disposal</li>
+                                        </ul>
+                                    </div>
+                                    <div class="listContentPet-list-topic-product-links-DogFood">
+                                        <h4>Supplies</h4>
+                                        <div class="supplies-Ul">
+                                            <ul class="supplies">
+                                                <li>Beds & Furniture</li>
+                                                <li>Bowis & Feeders</li>
+                                                <li>Cleaning & Repellents</li>
+                                                <li>Collars, Hamesses & Leashes</li>
+                                                <li>Creates, Gates & Containment</li>
+                                                <li>Dental Care & Wellness</li>
+                                            </ul>
+                                            <ul>
+                                                <li>Flea & Tick</li>
+                                                <li>Grooming Supplies</li>
+                                                <li>Toys</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listContentPet-Fishlist">
+                            <p class="listContentPet-list-topic">Fish</p>
+                            <div class="listContentPet-list-topic-Fishproduct">
+                                <div class="listContentPet-list-topic-product-links">
+                                    <div class="listContentPet-list-topic-product-links-FishFood">
+                                        <h4>Food & Care</h4>
+                                        <ul>
+                                            <li>Disease Treatment</li>
+                                            <li>Feeders</li>
+                                            <li>Food</li>
+                                            <li>Plant Care</li>
+                                            <li>Pond Care</li>
+                                            <li>Saltwater Aquarium Care</li>
+                                            <li>Water Care & Conditioning</li>
+                                            <li>Water Quality Testers</li>
+                                        </ul>
+                                    </div>
+                                    <div class="listContentPet-list-topic-product-links-FishFood">
+                                        <h4>Supplies</h4>
+                                        <div>
+                                            <ul>
+                                                <li>Decor, Gravel & Substrate</li>
+                                                <li>Heating & Lingting</li>
+                                                <li>Filters & Pumps</li>
+                                                <li>Maintenance & Repair</li>
+                                                <li>Starter Kits</li>
+                                                <li>Tanks & Aquariums</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="listContentPet-list-topic-product-links-FishFood">
+                                        <h4>Live Fish</h4>
+                                        <div>
+                                            <ul>
+                                                <li>Goldfish, Belta & More</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listContentPet-Birdlist">
+                            <p class="listContentPet-list-topic">Bird</p>
+                            <div class="listContentPet-list-topic-Fishproduct">
+                                <div class="listContentPet-list-topic-product-links">
+                                    <div class="listContentPet-list-topic-product-links-FishFood">
+                                        <h4>Food & Treats</h4>
+                                        <ul>
+                                            <li>Pet Bird Food</li>
+                                            <li>Traets</li>
+                                            <li>Wild Bird Food</li>
+                                        </ul>
+                                    </div>
+                                    <div class="listContentPet-list-topic-product-links-FishFood">
+                                        <h4>Supplies</h4>
+                                        <div>
+                                            <ul>
+                                                <li>Bowls & Feeders</li>
+                                                <li>Cages & Stands</li>
+                                                <li>Cleaning & Odour Control</li>
+                                                <li>Grooming</li>
+                                                <li>Health Care & Vitamins</li>
+                                                <li>Littel & Nesting</li>
+                                                <li>Toys, Perches & Decor</li>
+                                                <li>Wild Bird Food & Supplies</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="listContentPet-list-topic-product-links-FishFood">
+                                        <h4>Live Bird</h4>
+                                        <div>
+                                            <ul>
+                                                <li>Conure, Parakeet & More</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listContentPet-Reptilelist">
+                            <p class="listContentPet-list-topic">Reptile</p>
+                            <div class="listContentPet-list-topic-Fishproduct">
+                                <div class="listContentPet-list-topic-product-links">
+                                    <div class="listContentPet-list-topic-product-links-FishFood">
+                                        <h4>Habitats & Decor</h4>
+                                        <ul>
+                                            <li>Habitat Accessories</li>
+                                            <li>Habit Decor</li>
+                                            <li>Starter Kits</li>
+                                            <li>Terraiums</li>
+                                        </ul>
+                                    </div>
+                                    <div class="listContentPet-list-topic-product-links-FishFood">
+                                        <h4>Supplies</h4>
+                                        <div>
+                                            <ul>
+                                                <li>Cleaning & Water Care</li>
+                                                <li>Environmental Control & Lighting</li>
+                                                <li>Feeders & Food Storage</li>
+                                                <li>Food</li>
+                                                <li>Substrate & Bedding</li>
+                                                <li>Littel & Nesting</li>
+                                                <li>Vitamins & Supplements</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="listContentPet-list-topic-product-links-FishFood">
+                                        <h4>Live Reptile</h4>
+                                        <div>
+                                            <ul>
+                                                <li>Snakes, Turtles & More</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listContentPet-SmallPetlist">
+                            <p class="listContentPet-list-topic">Small Pet</p>
+                            <div class="listContentPet-list-topic-Fishproduct">
+                                <div class="listContentPet-list-topic-product-links">
+                                    <div class="listContentPet-list-topic-product-links-FishFood">
+                                        <h4>Food, Treats & Hay</h4>
+                                        <ul>
+                                            <li>Hay</li>
+                                            <li>Food</li>
+                                            <li>Treats</li>
+                                        </ul>
+                                    </div>
+                                    <div class="listContentPet-list-topic-product-links-FishFood">
+                                        <h4>Supplies</h4>
+                                        <div>
+                                            <ul>
+                                                <li>Cages, Habitats & Hutches</li>
+                                                <li>Cleaning & Odour Removers</li>
+                                                <li>Harnesses & Travel Carriers</li>
+                                                <li>Health & Grooming</li>
+                                                <li>Litter & Bedding</li>
+                                                <li>Starter Kits</li>
+                                                <li>Toys & Habitat Accessories</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="listContentPet-list-topic-product-links-FishFood">
+                                        <h4>Live Small Pets</h4>
+                                        <div>
+                                            <ul>
+                                                <li>Hamsters, Guinea Pigs & More</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+           <div class="list-content-services">
+                <a href="">Pet Services</a>
+                <div class="listContentServices-section">
+                    <div class="petServices-content">
+                        <div class="petServices-content-section">
+                            <p class="section-topic">Pet Services</p>
+                            <ul>
+                                <li>Gromming Salon</li>
+                                <li>Training Classes</li>
+                                <li>PetsHotel Boarding</li>
+                                <li>Doggie Day Camp</li>
+                            </ul>
+                        </div>
+                        <div class="petServices-content-section">
+                            <p class="section-topic">Adpotion</p>
+                            <ul>
+                                <li>Pet Adoption</li>
+                                <li>PetSmart Chariries</li>
+                            </ul>
+                        </div>
+                        <div class="petServices-content-section">
+                            <p class="section-topic">Learning Center</p>
+                            <ul>
+                                <li>Dog Care</li>
+                                <li>Cat Care</li>
+                                <li>Fish Care</li>
+                                <li>Bird Care</li>
+                                <li>Reptile Care</li>
+                                <li>Small Pet Care</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="list-content-sale">
+                <a href="">Sale</a>
+           </div>
+            <div class="list-content-help">
+                <a href="">Help</a>
+            </div>
+            <div class="list-content-findAstore">
+                <a href="">Find a Store</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--END LIST-->
+   <main>
+       <div class="introductionMain">
+           <p>Wicked Fun! Halloween costumes, treats & toys for all your lil goblins! Shop now &gt;</p>
+       </div>
+
+        <div class="main-slides">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="slides-pic">
+                        <img class="slider-picture" src="img/cover2.png" style="width:80%">
+                    </div>
+                    <div class="text">
+                        <h1>WICKED FUN</h1>
+                        <p class="content-slide2">Last chance to get your pet into the spooky spirit with Halloween costumes, toys & treats</p>
+                        <button class="button-slide2">Shop now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="slides-pic1">
+                        <img class="slider-picture" src="img/cover1.png" style="width:80%">
+                    </div>
+                    <div class="text">
+                        <h2>Catober Deals All Month Long</h2>
+                        <p class="content-slide1">Shop toys, treats, accessories & more</p>
+                        <button class="button-slide1">Shop now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="button-sliders">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <!--<div class="dotsSliders">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div><!-->
+        </div>
+
+        <div class="main-banner">
+            <img class="mainBanner-pic" src="img/ThanksGivingPic.png" alt="">
+        </div>
+
+        <div class="whatNew">
+            <p class="whatNewTopic">What's new</p>
+            <div class="whatNewSection">
+                <div class="whatNewSectionPicture">
+                    <img class="productPicture" src="img/whatNew/whatNew1.png" alt="">
+                    <p class="pictureContent">Nutrience The Rancher Air Dried Cat Food & Topper - Grain-Free, Red Meat</p>
+                </div>
+                <div class="whatNewSectionPicture">
+                    <img class="productPicture" src="img/whatNew/whatNew2.png" alt="">
+                    <p class="pictureContent">Authority Digestive Support Dental Dog Treats</p>
+                </div>
+                <div class="whatNewSectionPicture">
+                    <img class="productPicture" src="img/whatNew/whatNew3.png" alt="">
+                    <p class="pictureContent">Catit PIXI Cat Drinking Fountain</p>
+                </div>
+                <div class="whatNewSectionPicture">
+                    <img class="productPicture" src="img/whatNew/whatNew4.png" alt="">
+                    <p class="pictureContent">Living World Green Botanicals Guinea Pig Food</p>
+                </div>
+                <div class="whatNewSectionPicture">
+                    <img class="productPicture" src="img/whatNew/whatNew5.png" alt="">
+                    <p class="pictureContent">Catit PIXI Smart Cat Feeder with Remote Control App</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="deliveryMethods">
+            <div class="deliverySection">
+                <img class="deliverySection-picture" src="img/Curbsidepickup.png" alt="">
+                <p class="howtoDelivery">Curbside Pickup</p>
+                <p class="howtoDelivery-content">order online, wait for confirmation email, drive up, check in & pick up</p>
+            </div>
+            <div class="deliverySection">
+                <img class="deliverySection-picture" src="img/Same_day_delivery.png" alt="">
+                <p class="howtoDelivery">FREE Same-Day Delivery</p>
+                <img src="img/Doordash.png" alt="">
+            </div>
+            <div class="deliverySection">
+                <img class="deliverySection-picture" src="img/Ship_to_home_updated.png" alt="">
+                <p class="howtoDelivery">Ship To Home</p>
+                <p class="howtoDelivery-content">FREE shipping on orders over $49</p>
+            </div>
+            <div class="deliverySection">
+                <img class="deliverySection-picture" src="img/Autoship.png" alt="">
+                <p class="howtoDelivery">Autoship</p>
+                <p class="howtoDelivery-content">Save 15% on your first Autoship order + 5% off all future autoship orders.</p>
+            </div>
+        </div>
+
+        <div class="bestSellerProduct">
+            <p class="bestSeller-topic">best sellers</p>
+            <div class="bestSeller-section">
+                <div class="bestSeller-content">
+                    <div class="bestSellerContent-part">
+                        <img class="bestSellerContent-picture" src="img/bestSeller/pic1.jpg" alt="">
+                        <p>Canned Food</p>
+                    </div>
+                    <div class="bestSellerContent-part">
+                        <img class="bestSellerContent-picture" src="img/bestSeller/pic7.jpg" alt="">
+                        <p>Toys</p>
+                    </div>  
+                </div>
+                <div class="bestSeller-content">
+                    <div class="bestSellerContent-part">
+                        <img class="bestSellerContent-picture" src="img/bestSeller/pic2.jpg" alt="">
+                        <p>Dry Food</p>
+                    </div>
+                    <div class="bestSellerContent-part">
+                        <img class="bestSellerContent-picture" src="img/bestSeller/pic8.jpg" alt="">
+                        <p>Dog Beds</p>
+                    </div>
+                </div>
+                <div class="bestSeller-content">
+                    <div class="bestSellerContent-part">
+                        <img class="bestSellerContent-picture" src="img/bestSeller/pic3.jpg" alt="">
+                        <p>Litter</p>
+                    </div>
+                    <div class="bestSellerContent-part">
+                        <img class="bestSellerContent-picture" src="img/bestSeller/pic9.jpg" alt="">
+                        <p>Electronics</p>
+                    </div>
+                </div>
+                <div class="bestSeller-content">
+                    <div class="bestSellerContent-part">
+                        <img class="bestSellerContent-picture" src="img/bestSeller/pic4.jpg" alt="">
+                        <p>Treats</p>
+                    </div>
+                    <div class="bestSellerContent-part">
+                        <img class="bestSellerContent-picture" src="img/bestSeller/pic10.jpg" alt="">
+                        <p>Aquariums</p>
+                    </div>
+                </div>
+                <div class="bestSeller-content">
+                    <div class="bestSellerContent-part">
+                        <img class="bestSellerContent-picture" src="img/bestSeller/pic5.jpg" alt="">
+                        <p>Hay</p>
+                    </div>
+                    <div class="bestSellerContent-part">
+                        <img class="bestSellerContent-picture" src="img/bestSeller/pic11.jpg" alt="">
+                        <p>Bedding</p>
+                    </div>
+                </div>
+                <div class="bestSeller-content">
+                    <div class="bestSellerContent-part">
+                        <img class="bestSellerContent-picture" src="img/bestSeller/pic6.jpg" alt="">
+                        <p>Collars & Leads</p>
+                    </div>
+                    <div class="bestSellerContent-part">
+                        <img class="bestSellerContent-picture" src="img/bestSeller/pic12.jpg" alt="">
+                        <p>Containment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="secondBanner">
+            <img class="secondBanner-picture" src="img/second-banner.png" alt="">
+            <p class="secondBanner-content">sign up, earn points, get treats!</p>
+            <button class="secondBanner-button">learn more</button>
+        </div>
+
+        <div class="quickLinks">
+            <p class="quickLinksTopic">quick links</p>
+            <div class="quickLinksContent">
+                <div class="quickLinksSection">
+                    <img class="quickLinksPicture" src="img/quickLinks/newpet.jpg" alt="">
+                    <p class="pictureLink">new pet</p>
+                </div>
+                <div class="quickLinksSection">
+                    <img class="quickLinksPicture" src="img/quickLinks/grooming.jpg" alt="">
+                    <p class="pictureLink">gromming</p>
+                </div>
+                <div class="quickLinksSection">
+                    <img class="quickLinksPicture" src="img/quickLinks/coldWeather.jpg" alt="">
+                    <p class="pictureLink">cold weather</p>
+                </div>
+                <div class="quickLinksSection">
+                    <img class="quickLinksPicture" src="img/quickLinks/vitamins.jpg" alt="">
+                    <p class="pictureLink">vitamins & supplements</p>
+                </div>
+                <div class="quickLinksSection">
+                    <img class="quickLinksPicture" src="img/quickLinks/staokUp.jpg" alt="">
+                    <p class="pictureLink">stock up & save</p>
+                </div>
+                <div class="quickLinksSection">
+                    <img class="quickLinksPicture" src="img/quickLinks/clearance.jpg" alt="">
+                    <p class="pictureLink">clearance</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="services">
+            <p class="services-topic">services</p>
+            <div class="services-content">
+                <div class="services-topDog">
+                    <img class="services-picture" src="img/Service/HP_SERVICES_PET_20170320.png" alt="">
+                </div>
+                <div class="servicesContent-links">
+                    <a class="servicesBox" href="https://services.petsmart.ca/grooming?&origin=home&type=services&feb=groom">
+                        <div>
+                            <img class="servicesLinks-content-picture" src="img/Service/grooming.png" alt="">
+                        </div>
+                        <p class="ServicesLinks-content-p">GROOMING</p>
+                    </a>
+                    <a class="servicesBox" href="https://services.petsmart.ca/training?&origin=home&type=services&feb=train">
+                        <div class="servicesLinks-content">
+                            <img class="servicesLinks-content-picture" src="img/Service/training.png" alt="">
+                        </div>
+                        <p class="ServicesLinks-content-p">TRANING</p>
+                    </a>
+                    <a class="servicesBox" href="https://services.petsmart.ca/doggie-day-camp?&origin=home&type=services&feb=ddc">
+                        <div class="servicesLinks-content">
+                            <img class="servicesLinks-content-picture" src="img/Service/daycamp.png" alt="">
+                        </div>
+                        <p class="ServicesLinks-content-p">DOGGIE DAY CAMP</p>
+                    </a>
+                    <a class="servicesBox" href="https://services.petsmart.ca/petshotel?&origin=home&type=services&feb=hotel">
+                        <div class="servicesLinks-content">
+                            <img class="servicesLinks-content-picture" src="img/Service/pethotel.png" alt="">
+                        </div>
+                        <p class="ServicesLinks-content-p">PETHOTEL</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="brandsYouLove">
+            <a class="brandsYouLove-start" href="https://www.petsmart.ca/shop-by-brand/#page_name=home&link_section=&link_name=shop_all_brands&template_type=brands">
+                <h5 class="brandsYouLove-title">brands you love</h5>
+                <p class="brandsYouLove-link">shop all brands</p>
+            </a>
+            <section class="brandsYouLove-content">
+                <div class="brandsYouLove-content-pictures">
+                    <div class="contentItem">
+                        <a class="contentItem-button" href="https://www.petsmart.ca/featured-brands/authority/dog-food/?&origin=home&type=carousel&feb=authority">
+                            <img src="img/shopByBrandLinks/WEB-497879-12-19_Authority_Brand-Flyout1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contentItem">
+                        <a class="contentItem-button" href="https://www.petsmart.ca/featured-brands/arcadia-trail/?&origin=home&type=carousel&feb=arctrail">
+                            <img src="img/shopByBrandLinks/Arcadia_Trail_Logo-112X112_CA2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contentItem">
+                        <a class="contentItem-button" href="https://www.petsmart.ca/featured-brands/top-paw/?&origin=home&type=carousel&feb=toppaw">
+                            <img src="img/shopByBrandLinks/TopPaw-Logo-112X112_CA3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contentItem">
+                        <a class="contentItem-button" href="https://www.petsmart.ca/featured-brands/beaver-canoe/?&origin=home&type=carousel&feb=bvc">
+                            <img src="img/shopByBrandLinks/Beaver Canoe-Logo_112X112-CA4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contentItem">
+                        <a class="contentItem-button" href="https://www.petsmart.ca/featured-brands/hungry-hunter/?&origin=home&type=carousel&feb=hhunter">
+                            <img src="img/shopByBrandLinks/HungryHunter-Logo_112X112_CA5.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contentItem">
+                        <a class="contentItem-button" href="https://www.petsmart.ca/featured-brands/catit/?&origin=home&type=carousel&feb=catit">
+                            <img src="img/shopByBrandLinks/Catit_Logo-112X112_CA6.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contentItem">
+                        <a class="contentItem-button" href="https://www.petsmart.ca/featured-brands/only-natural-pet/?&origin=home&type=carousel&feb=onp">
+                            <img src="img/shopByBrandLinks/ONP_Logo_MASTERLogo-112X112_CA7.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contentItem">
+                        <a class="contentItem-button" href="https://www.petsmart.ca/featured-brands/simply-nourish/?&origin=home&type=carousel&feb=snourish">
+                            <img src="img/shopByBrandLinks/WEB-497879-12-19_Simply-Nourish_Brand-Flyout8.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contentItem">
+                        <a class="contentItem-button" href="https://www.petsmart.ca/featured-brands/top-fin/?&origin=home&type=carousel&feb=topfin">
+                            <img src="img/shopByBrandLinks/WEB-497879-12-19_Top-Fin_Brand-Flyout9.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contentItem">
+                        <a class="contentItem-button" href="https://www.petsmart.ca/featured-brands/thrive/?&origin=home&type=carousel&feb=thrive">
+                            <img src="img/shopByBrandLinks/WEB-497879-12-19_Thrive_Brand-Flyout10.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contentItem">
+                        <a class="contentItem-button" href="https://www.petsmart.ca/featured-brands/whisker-city/?&origin=home&type=carousel&feb=whcity">
+                            <img src="img/shopByBrandLinks/WEB-497879-12-19_Whisker-City_Brand-Flyout11.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contentItem">
+                        <a class="contentItem-button" href="https://www.petsmart.ca/featured-brands/all-living-things/?&origin=home&type=carousel&feb=alt">
+                            <img src="img/shopByBrandLinks/WEB-497879-12-19_All-Living-Things_Brand-Flyout12.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="mutilPurpose">
+            <section class="mutilPurpose-content">
+                <div class="mutilPurpose-content-column">
+                    <div class="mutilPurpose-content-left-header">
+                        <h5 class="mutilPurpose-content-left-header-only">what's happening</h5>
+                    </div>
+                    <div class="contenLeft-section">
+                        <div class="section-container">
+                            <div class="section-container-box">
+                                <img src="img/ADOPTION.png" alt="">
+                                <h3 class="section-container-box-title">ADOPTION</h3>
+                                <h4 class="section-container-box-even">PetSmart Charities® of Canada</h4>
+                                <p class="section-container-box-copy">Find your new best friend! Adopt a pet at a store near you.</p>
+                                <a class="section-container-box-link" href="http://www.petsmartcharities.ca/?origin=home&type=wh&dec=adoption">learn more</a>
+                            </div>
+                            <div class="section-container-box">
+                                <img src="img/SERCICE-HAPPENING.png" alt="">
+                                <h3 class="section-container-box-title">SERVICES</h3>
+                                <h4 class="section-container-box-even">Grooming, Training, PetsHotel and Doggie Day Camp open.</h4>
+                                <p class="section-container-box-copy">Please check your local store page for details.</p>
+                                <a class="section-container-box-link" href="http://www.petsmartcharities.ca/?origin=home&type=wh&dec=adoption">book now</a>
+                            </div>
+                            <div class="section-container-box">
+                                <img src="img/SERCICE-HAPPENING.png" alt="">
+                                <h3 class="section-container-box-title">COVID-19</h3>
+                                <h4 class="section-container-box-even">The health & safety of you & your pet is our top priority.</h4>
+                                <a class="section-container-box-link" href="http://www.petsmartcharities.ca/?origin=home&type=wh&dec=adoption">learn more</a>
+                            </div>
+                            <div class="section-container-box">
+                                <img src="img/SERCICE-HAPPENING.png" alt="">
+                                <h3 class="section-container-box-title">PETSMART MOBILE APP</h3>
+                                <h4 class="section-container-box-even">Download for FREE today!</h4>
+                                <p class="section-container-box-copy">Book services, get special offers, play our Treat Trail Game & more right at your fingertips.</p>
+                                <a class="section-container-box-link" href="http://www.petsmartcharities.ca/?origin=home&type=wh&dec=adoption">learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mutilPurpose-content-column">
+                    <div class="contentRight-title">
+                        <h5 class="mutilPurpose-content-left-header-only">newest videos</h5>
+                    </div>
+                    <section class="sectionYoutube">
+                        <div class="video-slider">
+                            <div class="videoWrapper">
+                                <iframe src="https://www.youtube.com/embed/VTGBp92huy8" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="videoWrapper">
+                                <iframe src="https://www.youtube.com/embed/yvDz9EAUGfQ" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="videoWrapper">
+                                <iframe src="https://www.youtube.com/embed/WwBJbPPgtgc" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="videoWrapper">
+                                <iframe src="https://www.youtube.com/embed/_GdJEgpr9n4" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="videoWrapper">
+                                <iframe src="https://www.youtube.com/embed/Jhj3CknDi3M" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="videoWrapper">
+                                <iframe src="https://www.youtube.com/embed/Nb3ZKB9MEc8" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="videoWrapper">
+                                <iframe src="https://www.youtube.com/embed/q39ferwugHE" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="videoWrapper">
+                                <iframe src="https://www.youtube.com/embed/rTIVh2v65ds" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="videoWrapper">
+                                <iframe src="https://www.youtube.com/embed/VTGBp92huy8" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="videoWrapper">
+                                <iframe src="https://www.youtube.com/embed/yvDz9EAUGfQ" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="videoPicture">
+                            <span class="picContent">
+                                <img src="https://img.youtube.com/vi/VTGBp92huy8/default.jpg" alt="" onclick="currentSlide(1)">
+                            </span>
+                            <span class="picContent">
+                                <img src="https://img.youtube.com/vi/yvDz9EAUGfQ/default.jpg" alt="" onclick="currentSlide(2)">
+                            </span>
+                            <span class="picContent">
+                                <img src="https://img.youtube.com/vi/WwBJbPPgtgc/default.jpg" alt="" onclick="currentSlide(3)">
+                            </span>
+                            <span class="picContent">
+                                <img src="https://img.youtube.com/vi/_GdJEgpr9n4/default.jpg" alt="" onclick="currentSlide(4)">
+                            </span>
+                            <span class="picContent">
+                                <img src="https://img.youtube.com/vi/Jhj3CknDi3M/default.jpg" alt="" onclick="currentSlide(5)">
+                            </span>
+                            <span class="picContent">
+                                <img src="https://img.youtube.com/vi/Nb3ZKB9MEc8/default.jpg" alt="" onclick="currentSlide(6)">
+                            </span>
+                            <span class="picContent">
+                                <img src="https://img.youtube.com/vi/q39ferwugHE/default.jpg" alt="" onclick="currentSlide(7)">
+                            </span>
+                            <span class="picContent">
+                                <img src="https://img.youtube.com/vi/rTIVh2v65ds/default.jpg" alt="" onclick="currentSlide(8)">
+                            </span>
+                            <span class="picContent">
+                                <img src="https://img.youtube.com/vi/VTGBp92huy8/default.jpg" alt="" onclick="currentSlide(9)">
+                            </span>
+                            <span class="picContent">
+                                <img src="https://img.youtube.com/vi/yvDz9EAUGfQ/default.jpg" alt="" onclick="currentSlide(10)">
+                            </span>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+   </main>
+
+   <script src="js/main.js"></script>
+   <script>
+       Validator({
+           form: '#form-1',
+           rules: [
+               Validator.isEmail('#email'),
+               Validator.isPassword('#password'),
+           ]
+       });
+   </script>
+</body>
+</html>
